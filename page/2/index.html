@@ -149,8 +149,64 @@
     <div class="post-content">
         <div class="post-head home-post-head">
             <h1 class="post-title">
-                <a href="/2020/06/06/redis%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/">
-                    redis的使用场景</a>
+                <a href="/2020/06/23/xa/">
+                    xa协议</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年06月23日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            xa协议简介
+资源管理器与事务管理器之间通信的标准接口
+通过两阶段提交实现分布式事务，
+
+demo123456789101112131415xa start &amp;#39;xatest&amp;#39;;insert into user valu...
+            
+        </p>
+    </div>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/06/14/command/">
+                    命令模式</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年06月14日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            命令模式使用场景
+行为的请求者与行为的实现着需要松耦合
+将多个行为通过宏宏命令进行组装
+
+demo命令接口1234567public interface Command &amp;#123;    /**     * 执行命令     */ ...
+            
+        </p>
+    </div>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/06/06/redis%E6%8C%81%E4%B9%85%E5%8C%96/">
+                    redsi持久化</a>
             </h1>
             <div class="post-meta"> &bull;
                 <time class="post-date" datetime="" title="">
@@ -160,10 +216,9 @@
         </div>
         <p class="brief">
             
-            redis的使用场景
-高性能适合做缓存 
-对字典表进行缓存（对字典表的操作同步到redis）
-缓存数据，访问数据时先读取redis中的数据，没有的话再去读取mysql（避免缓存击穿，而且数据实时性不高， 因为要先存入mysql，再同步...
+            redis持久化持久化的方式
+rdb
+aofrdm工作方式Redis 调用forks. 同时拥有父进程和子进程。子进程将数据集写入到一个临时 RDB 文件中。当子进程完成对新 RDB 文件的写入时，Redis 用新 RDB 文件替换原...
             
         </p>
     </div>
@@ -176,19 +231,20 @@
     <div class="post-content">
         <div class="post-head home-post-head">
             <h1 class="post-title">
-                <a href="/2020/05/02/springboot_docker_package/">
-                    springboot docker</a>
+                <a href="/2020/06/06/redis%E5%91%BD%E4%BB%A4/">
+                    redis命令</a>
             </h1>
             <div class="post-meta"> &bull;
                 <time class="post-date" datetime="" title="">
-                    2020年05月02日
+                    2020年06月06日
                 </time>
             </div>
         </div>
         <p class="brief">
             
-            springboot项目使用docker部署docker部署的优势
-隔离将Docker可以将我们的应用程序打包封装到一个容器中，该容器包含了应用程序的代码、运行环境、依赖库、配置文件等必需的资源。容器之间达到进程级别的隔离，在容器中的...
+            redis命令append存在key的话，向字符串追加，不存在则创建应用：通过每次追加一定长度的字符串，需要的时候通过getrange命令获取
+bitcount统计字符串被设置为1的bit数.应用：用户登陆统计
+eval执行lua脚本...
             
         </p>
     </div>
@@ -201,22 +257,22 @@
     <div class="post-content">
         <div class="post-head home-post-head">
             <h1 class="post-title">
-                <a href="/2020/04/25/compile/">
-                    java动态编译</a>
+                <a href="/2020/06/06/redis%E7%9A%84%E7%BC%BA%E7%82%B9/">
+                    redis的缺点</a>
             </h1>
             <div class="post-meta"> &bull;
                 <time class="post-date" datetime="" title="">
-                    2020年04月25日
+                    2020年06月06日
                 </time>
             </div>
         </div>
         <p class="brief">
             
-            java动态编译目的通过动态编译，避免每次更改代码都需要重启
-目前存在的问题
-多次编译引起的内存不足的问题（使用静态工厂模式，讲class对象缓存起来，不必每次都去加载，从工厂中获取）
-脚本如何维护
-脚本的安全性demo自定义类加载器...
+            redis的缺点
+持久化影响性能 
+占用较多内存资源 
+
+
             
         </p>
     </div>
@@ -227,7 +283,7 @@
 
 <nav class="pagination" role="navigation">
     <div id="page-nav">
-        <a class="extend prev" rel="prev" href="/">&lt;i class&#x3D;&#39;fa fa-angle-left&#39;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+        <a class="extend prev" rel="prev" href="/">&lt;&lt;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">&gt;&gt;</a>
     </div>
 </nav>
 
