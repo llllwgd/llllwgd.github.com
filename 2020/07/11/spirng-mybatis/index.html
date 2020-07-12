@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="llllwgd">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="https://llllwgd.github.io">
+    <!--SEO-->
+
+<meta name="keywords" content="mysql,mybatis,spring" />
+
+
+<meta name="description" content="spirng-mybatisdemopom.xml123456789101112131415161718192021222324252627282930313233343536373839404..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    spring-mybatis |
+    
+    llllwgd
+</title>
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1279070675 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1279070675%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='lllwgd'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <h2>
+                大闹一场，悄然离去
+            </h2>
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="https://llllwgd.github.io">
+                        llllwgd</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/java/"><i class="fa "></i>
+                                java</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/数据库/"><i class="fa "></i>
+                                数据库</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/redis/"><i class="fa "></i>
+                                redis</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/docker/"><i class="fa "></i>
+                                docker</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="spring-mybatis">
+            
+            spring-mybatis
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/mybatis/">mybatis</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/mybatis/" rel="tag">mybatis</a> <a class="tag-link" href="/tags/mysql/" rel="tag">mysql</a> <a class="tag-link" href="/tags/spring/" rel="tag">spring</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2020/07/11</span>
+    </span>
+    
+    <span class="fa-wrap">
+        <i class="fa fa-eye"></i>
+        <span id="busuanzi_value_page_pv"></span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="spirng-mybatis"><a href="#spirng-mybatis" class="headerlink" title="spirng-mybatis"></a>spirng-mybatis</h1><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><h3 id="pom-xml"><a href="#pom-xml" class="headerlink" title="pom.xml"></a>pom.xml</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.1.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">relativePath</span>/&gt;</span> <span class="comment">&lt;!-- lookup parent from repository --&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.llllwgd.database<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-mybatis<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">name</span>&gt;</span>spring-mybatis<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">description</span>&gt;</span>Demo project for Spring Boot<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">java.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">java.version</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-test<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.junit.vintage<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit-vintage-engine<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-spring<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">version</span>&gt;</span>8.0.20<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-jdbc<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.4.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="application-properties"><a href="#application-properties" class="headerlink" title="application.properties"></a>application.properties</h3><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">spring.application.name</span>=<span class="string">spring-mybatis</span></span><br><span class="line"><span class="meta">datasource.driver-class-name</span>=<span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="meta">datasource.url</span>=<span class="string">jdbc:mysql://localhost:3306/test?useSSL=false</span></span><br><span class="line"><span class="meta">datasource.username</span>=<span class="string">root</span></span><br><span class="line"><span class="meta">datasource.password</span>=<span class="string">root</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="main-java"><a href="#main-java" class="headerlink" title="main.java"></a>main.java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@MapperScan</span>(<span class="string">"com.llllwgd.database.springmybatis.dao"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringMybatisApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(SpringMybatisApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="config-java"><a href="#config-java" class="headerlink" title="config.java"></a>config.java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DataSourceConfig</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;datasource.driver-class-name&#125;"</span>)</span><br><span class="line">    <span class="keyword">private</span> String driver;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;datasource.url&#125;"</span>)</span><br><span class="line">    <span class="keyword">private</span> String url;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;datasource.username&#125;"</span>)</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;datasource.password&#125;"</span>)</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">getDataSource</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> UnpooledDataSource(driver, url, username, password);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> SqlSessionFactory <span class="title">sqlSessionFactory</span><span class="params">(DataSource dataSource)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        SqlSessionFactoryBean factoryBean = <span class="keyword">new</span> SqlSessionFactoryBean();</span><br><span class="line">        factoryBean.setDataSource(dataSource);</span><br><span class="line">        ResourcePatternResolver resourceResolver = <span class="keyword">new</span> PathMatchingResourcePatternResolver();</span><br><span class="line">        Resource[] resources = resourceResolver.getResources(<span class="string">"classpath*:mapper/*.xml"</span>);</span><br><span class="line">        factoryBean.setMapperLocations(resources);</span><br><span class="line">        <span class="keyword">return</span> factoryBean.getObject();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="源码分析"><a href="#源码分析" class="headerlink" title="源码分析"></a>源码分析</h2><h3 id="SqlSessionFactoryBean"><a href="#SqlSessionFactoryBean" class="headerlink" title="SqlSessionFactoryBean"></a>SqlSessionFactoryBean</h3><h4 id="实现的接口"><a href="#实现的接口" class="headerlink" title="实现的接口"></a>实现的接口</h4><h5 id="FactoryBean"><a href="#FactoryBean" class="headerlink" title="FactoryBean"></a>FactoryBean</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">FactoryBean</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">   <span class="meta">@Nullable</span></span><br><span class="line">   <span class="function">T <span class="title">getObject</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>;</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">   Class&lt;?&gt; getObjectType();</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">default</span> <span class="keyword">boolean</span> <span class="title">isSingleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> SqlSessionFactory <span class="title">getObject</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">this</span>.sqlSessionFactory == <span class="keyword">null</span>) &#123;</span><br><span class="line">    afterPropertiesSet();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.sqlSessionFactory;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">afterPropertiesSet</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">  notNull(dataSource, <span class="string">"Property 'dataSource' is required"</span>);</span><br><span class="line">  notNull(sqlSessionFactoryBuilder, <span class="string">"Property 'sqlSessionFactoryBuilder' is required"</span>);</span><br><span class="line">  state((configuration == <span class="keyword">null</span> &amp;&amp; configLocation == <span class="keyword">null</span>) || !(configuration != <span class="keyword">null</span> &amp;&amp; configLocation != <span class="keyword">null</span>),</span><br><span class="line">            <span class="string">"Property 'configuration' and 'configLocation' can not specified with together"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.sqlSessionFactory = buildSqlSessionFactory();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> SqlSessionFactory <span class="title">buildSqlSessionFactory</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">final</span> Configuration targetConfiguration;</span><br><span class="line"></span><br><span class="line">  XMLConfigBuilder xmlConfigBuilder = <span class="keyword">null</span>;</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">this</span>.configuration != <span class="keyword">null</span>) &#123;</span><br><span class="line">    targetConfiguration = <span class="keyword">this</span>.configuration;</span><br><span class="line">    <span class="keyword">if</span> (targetConfiguration.getVariables() == <span class="keyword">null</span>) &#123;</span><br><span class="line">      targetConfiguration.setVariables(<span class="keyword">this</span>.configurationProperties);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">this</span>.configurationProperties != <span class="keyword">null</span>) &#123;</span><br><span class="line">      targetConfiguration.getVariables().putAll(<span class="keyword">this</span>.configurationProperties);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">this</span>.configLocation != <span class="keyword">null</span>) &#123;</span><br><span class="line">    xmlConfigBuilder = <span class="keyword">new</span> XMLConfigBuilder(<span class="keyword">this</span>.configLocation.getInputStream(), <span class="keyword">null</span>, <span class="keyword">this</span>.configurationProperties);</span><br><span class="line">    targetConfiguration = xmlConfigBuilder.getConfiguration();</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    LOGGER.debug(() -&gt; <span class="string">"Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration"</span>);</span><br><span class="line">    targetConfiguration = <span class="keyword">new</span> Configuration();</span><br><span class="line">    Optional.ofNullable(<span class="keyword">this</span>.configurationProperties).ifPresent(targetConfiguration::setVariables);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Optional.ofNullable(<span class="keyword">this</span>.objectFactory).ifPresent(targetConfiguration::setObjectFactory);</span><br><span class="line">  Optional.ofNullable(<span class="keyword">this</span>.objectWrapperFactory).ifPresent(targetConfiguration::setObjectWrapperFactory);</span><br><span class="line">  Optional.ofNullable(<span class="keyword">this</span>.vfs).ifPresent(targetConfiguration::setVfsImpl);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (hasLength(<span class="keyword">this</span>.typeAliasesPackage)) &#123;</span><br><span class="line">    String[] typeAliasPackageArray = tokenizeToStringArray(<span class="keyword">this</span>.typeAliasesPackage,</span><br><span class="line">        ConfigurableApplicationContext.CONFIG_LOCATION_DELIMITERS);</span><br><span class="line">    Stream.of(typeAliasPackageArray).forEach(packageToScan -&gt; &#123;</span><br><span class="line">      targetConfiguration.getTypeAliasRegistry().registerAliases(packageToScan,</span><br><span class="line">          typeAliasesSuperType == null ? Object.class : typeAliasesSuperType);</span><br><span class="line">      LOGGER.debug(() -&gt; <span class="string">"Scanned package: '"</span> + packageToScan + <span class="string">"' for aliases"</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (!isEmpty(<span class="keyword">this</span>.typeAliases)) &#123;</span><br><span class="line">    Stream.of(<span class="keyword">this</span>.typeAliases).forEach(typeAlias -&gt; &#123;</span><br><span class="line">      targetConfiguration.getTypeAliasRegistry().registerAlias(typeAlias);</span><br><span class="line">      LOGGER.debug(() -&gt; <span class="string">"Registered type alias: '"</span> + typeAlias + <span class="string">"'"</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (!isEmpty(<span class="keyword">this</span>.plugins)) &#123;</span><br><span class="line">    Stream.of(<span class="keyword">this</span>.plugins).forEach(plugin -&gt; &#123;</span><br><span class="line">      targetConfiguration.addInterceptor(plugin);</span><br><span class="line">      LOGGER.debug(() -&gt; <span class="string">"Registered plugin: '"</span> + plugin + <span class="string">"'"</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (hasLength(<span class="keyword">this</span>.typeHandlersPackage)) &#123;</span><br><span class="line">    String[] typeHandlersPackageArray = tokenizeToStringArray(<span class="keyword">this</span>.typeHandlersPackage,</span><br><span class="line">        ConfigurableApplicationContext.CONFIG_LOCATION_DELIMITERS);</span><br><span class="line">    Stream.of(typeHandlersPackageArray).forEach(packageToScan -&gt; &#123;</span><br><span class="line">      targetConfiguration.getTypeHandlerRegistry().register(packageToScan);</span><br><span class="line">      LOGGER.debug(() -&gt; <span class="string">"Scanned package: '"</span> + packageToScan + <span class="string">"' for type handlers"</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (!isEmpty(<span class="keyword">this</span>.typeHandlers)) &#123;</span><br><span class="line">    Stream.of(<span class="keyword">this</span>.typeHandlers).forEach(typeHandler -&gt; &#123;</span><br><span class="line">      targetConfiguration.getTypeHandlerRegistry().register(typeHandler);</span><br><span class="line">      LOGGER.debug(() -&gt; <span class="string">"Registered type handler: '"</span> + typeHandler + <span class="string">"'"</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">this</span>.databaseIdProvider != <span class="keyword">null</span>) &#123;<span class="comment">//fix #64 set databaseId before parse mapper xmls</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      targetConfiguration.setDatabaseId(<span class="keyword">this</span>.databaseIdProvider.getDatabaseId(<span class="keyword">this</span>.dataSource));</span><br><span class="line">    &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">      <span class="keyword">throw</span> <span class="keyword">new</span> NestedIOException(<span class="string">"Failed getting a databaseId"</span>, e);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Optional.ofNullable(<span class="keyword">this</span>.cache).ifPresent(targetConfiguration::addCache);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (xmlConfigBuilder != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      xmlConfigBuilder.parse();</span><br><span class="line">      LOGGER.debug(() -&gt; <span class="string">"Parsed configuration file: '"</span> + <span class="keyword">this</span>.configLocation + <span class="string">"'"</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception ex) &#123;</span><br><span class="line">      <span class="keyword">throw</span> <span class="keyword">new</span> NestedIOException(<span class="string">"Failed to parse config resource: "</span> + <span class="keyword">this</span>.configLocation, ex);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">      ErrorContext.instance().reset();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  targetConfiguration.setEnvironment(<span class="keyword">new</span> Environment(<span class="keyword">this</span>.environment,</span><br><span class="line">      <span class="keyword">this</span>.transactionFactory == <span class="keyword">null</span> ? <span class="keyword">new</span> SpringManagedTransactionFactory() : <span class="keyword">this</span>.transactionFactory,</span><br><span class="line">      <span class="keyword">this</span>.dataSource));</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (!isEmpty(<span class="keyword">this</span>.mapperLocations)) &#123;</span><br><span class="line">    <span class="keyword">for</span> (Resource mapperLocation : <span class="keyword">this</span>.mapperLocations) &#123;</span><br><span class="line">      <span class="keyword">if</span> (mapperLocation == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        XMLMapperBuilder xmlMapperBuilder = <span class="keyword">new</span> XMLMapperBuilder(mapperLocation.getInputStream(),</span><br><span class="line">            targetConfiguration, mapperLocation.toString(), targetConfiguration.getSqlFragments());</span><br><span class="line">        xmlMapperBuilder.parse();</span><br><span class="line">      &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> NestedIOException(<span class="string">"Failed to parse mapping resource: '"</span> + mapperLocation + <span class="string">"'"</span>, e);</span><br><span class="line">      &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        ErrorContext.instance().reset();</span><br><span class="line">      &#125;</span><br><span class="line">      LOGGER.debug(() -&gt; <span class="string">"Parsed mapper file: '"</span> + mapperLocation + <span class="string">"'"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    LOGGER.debug(() -&gt; <span class="string">"Property 'mapperLocations' was not specified or no matching resources found"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.sqlSessionFactoryBuilder.build(targetConfiguration);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="InitializingBean"><a href="#InitializingBean" class="headerlink" title="InitializingBean"></a>InitializingBean</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">InitializingBean</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * Invoked by the containing &#123;<span class="doctag">@code</span> BeanFactory&#125; after it has set all bean properties</span></span><br><span class="line"><span class="comment">    * and satisfied &#123;<span class="doctag">@link</span> BeanFactoryAware&#125;, &#123;<span class="doctag">@code</span> ApplicationContextAware&#125; etc.</span></span><br><span class="line"><span class="comment">    * &lt;p&gt;This method allows the bean instance to perform validation of its overall</span></span><br><span class="line"><span class="comment">    * configuration and final initialization when all bean properties have been set.</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> Exception in the event of misconfiguration (such as failure to set an</span></span><br><span class="line"><span class="comment">    * essential property) or if initialization fails for any other reason</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">afterPropertiesSet</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="ApplicationListener"><a href="#ApplicationListener" class="headerlink" title="ApplicationListener"></a>ApplicationListener</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ApplicationListener</span>&lt;<span class="title">E</span> <span class="keyword">extends</span> <span class="title">ApplicationEvent</span>&gt; <span class="keyword">extends</span> <span class="title">EventListener</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * Handle an application event.</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@param</span> event the event to respond to</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">onApplicationEvent</span><span class="params">(E event)</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * &#123;<span class="doctag">@inheritDoc</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onApplicationEvent</span><span class="params">(ApplicationEvent event)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (failFast &amp;&amp; event <span class="keyword">instanceof</span> ContextRefreshedEvent) &#123;</span><br><span class="line">    <span class="comment">// fail-fast -&gt; check all statements are completed</span></span><br><span class="line">    <span class="keyword">this</span>.sqlSessionFactory.getConfiguration().getMappedStatementNames();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+    
+    <div class="reward" ontouchstart>
+    <div class="reward-wrap">赏
+        <div class="reward-box">
+            
+            
+            <span class="reward-type">
+                <img class="wechat" src="/img/wechatPay.jpeg"><b>微信打赏</b>
+            </span>
+            
+        </div>
+    </div>
+    <p class="reward-tip">
+        卖代码为生
+    </p>
+</div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="/img/wechat.jpeg" target="_blank">llllwgd</a>
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    <a href="/2020/07/12/mybaits-study/" class="pre-post btn btn-default" title='mybatis'>
+        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+        <span class="hidden-xs">
+            mybatis</span>
+    </a>
+    
+    
+    <a href="/2020/06/26/start_code/" class="next-post btn btn-default" title='seata启动流程'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            seata启动流程</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
+    
+</div>
+
+<div id="comments">
+    
+
+<div id="vcomments" class="valine"></div>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: '2TQvKGRGUu6CQFXTgBOXTbHz-gzGzoHsz',
+    appKey: 'iX0RU69ah1xv5bTQgb6vKxWr',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: true,
+    avatar: 'mm',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'zh-CN'.toLowerCase()
+})
+</script>
+
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#spirng-mybatis"><span class="toc-text">spirng-mybatis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#demo"><span class="toc-text">demo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pom-xml"><span class="toc-text">pom.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#application-properties"><span class="toc-text">application.properties</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#main-java"><span class="toc-text">main.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#config-java"><span class="toc-text">config.java</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#源码分析"><span class="toc-text">源码分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SqlSessionFactoryBean"><span class="toc-text">SqlSessionFactoryBean</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#实现的接口"><span class="toc-text">实现的接口</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#FactoryBean"><span class="toc-text">FactoryBean</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#InitializingBean"><span class="toc-text">InitializingBean</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ApplicationListener"><span class="toc-text">ApplicationListener</span></a></li></ol></li></ol></li></ol></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+    访问量:
+    <strong id="busuanzi_value_site_pv">
+        <i class="fa fa-spinner fa-spin"></i>
+    </strong>
+    &nbsp; | &nbsp;
+    访客数:
+    <strong id="busuanzi_value_site_uv">
+        <i class="fa fa-spinner fa-spin"></i>
+    </strong>
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2020
+                    
+                </span> |
+                <span>
+                    Powered by <a href="https://github.com/llllwgd" class="copyright-links" target="_blank" rel="nofollow">llllwgd</a>
+                </span>
+<!--                <span>-->
+<!--                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>-->
+<!--                </span>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>

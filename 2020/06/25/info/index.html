@@ -22,7 +22,7 @@
 <meta name="keywords" content="java,程序员,docker,mysql,redis" />
 
 
-<meta name="description" content="" />
+<meta name="description" content="seata 简介Seata 是一款开源的分布式事务解决方案，致力于提供高性能和简单易用的分布式事务服务。Seata 将为用户提供了 AT、TCC、SAGA 和 XA 事务模式，为用户打造一站式的..." />
 
 
 <meta name="robots" content="all" />
@@ -33,7 +33,7 @@
 
 <title>
     
-    categories |
+    info |
     
     llllwgd
 </title>
@@ -141,130 +141,157 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content ">
-                    <div>
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="info">
+            
+            info
+            
+        </h1>
+        <div class="post-meta">
     
-    <article class="post">
-        <h1 class="post-head">共计
-            6个分类</h1>
-        <div class="post-body">
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
             
-            <li class="post-items">
-                <a href="/categories/java/" title="java" target="_blank">
-                    java
-                </a>
-            </li>
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2020/06/25</span>
+    </span>
+    
+    <span class="fa-wrap">
+        <i class="fa fa-eye"></i>
+        <span id="busuanzi_value_page_pv"></span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="seata-简介"><a href="#seata-简介" class="headerlink" title="seata 简介"></a>seata 简介</h1><h2 id="Seata-是一款开源的分布式事务解决方案，致力于提供高性能和简单易用的分布式事务服务。Seata-将为用户提供了-AT、TCC、SAGA-和-XA-事务模式，为用户打造一站式的分布式解决方案。"><a href="#Seata-是一款开源的分布式事务解决方案，致力于提供高性能和简单易用的分布式事务服务。Seata-将为用户提供了-AT、TCC、SAGA-和-XA-事务模式，为用户打造一站式的分布式解决方案。" class="headerlink" title="Seata 是一款开源的分布式事务解决方案，致力于提供高性能和简单易用的分布式事务服务。Seata 将为用户提供了 AT、TCC、SAGA 和 XA 事务模式，为用户打造一站式的分布式解决方案。"></a>Seata 是一款开源的分布式事务解决方案，致力于提供高性能和简单易用的分布式事务服务。Seata 将为用户提供了 AT、TCC、SAGA 和 XA 事务模式，为用户打造一站式的分布式解决方案。</h2><h2 id="支持的模式"><a href="#支持的模式" class="headerlink" title="支持的模式"></a>支持的模式</h2><ol>
+<li>AT模式</li>
+<li>TCC模式</li>
+<li>saga模式</li>
+</ol>
+<h2 id="AT模式"><a href="#AT模式" class="headerlink" title="AT模式"></a>AT模式</h2><ol>
+<li>一阶段prepare行为:在本地事务中,一并提交业务数据的更新和相应回滚日志</li>
+<li>二阶段commit行为:成功,自动批量删除回滚日志</li>
+<li>二阶段rollback行为:通过回滚日志,自动生成补偿操作,完成数据回滚</li>
+</ol>
+<h2 id="TCC模式"><a href="#TCC模式" class="headerlink" title="TCC模式"></a>TCC模式</h2><ol>
+<li>一阶段 prepare 行为：调用 <strong>自定义</strong> 的 prepare 逻辑。</li>
+<li>二阶段 commit 行为：调用 <strong>自定义</strong> 的 commit 逻辑。</li>
+<li>二阶段 rollback 行为：调用 <strong>自定义</strong> 的 rollback 逻辑。</li>
+</ol>
+<h2 id="Saga模式"><a href="#Saga模式" class="headerlink" title="Saga模式"></a>Saga模式</h2><ul>
+<li>todo : 未能理解</li>
+</ul>
+
+    </div>
+    
+    <div class="reward" ontouchstart>
+    <div class="reward-wrap">赏
+        <div class="reward-box">
             
-            <li class="post-items">
-                <a href="/categories/数据库/" title="数据库" target="_blank">
-                    数据库
-                </a>
-            </li>
             
-            <li class="post-items">
-                <a href="/categories/mybatis/" title="mybatis" target="_blank">
-                    mybatis
-                </a>
-            </li>
-            
-            <li class="post-items">
-                <a href="/categories/redis/" title="redis" target="_blank">
-                    redis
-                </a>
-            </li>
-            
-            <li class="post-items">
-                <a href="/categories/docker/" title="docker" target="_blank">
-                    docker
-                </a>
-            </li>
-            
-            <li class="post-items">
-                <a href="/categories/mysql/" title="mysql" target="_blank">
-                    mysql
-                </a>
-            </li>
+            <span class="reward-type">
+                <img class="wechat" src="/img/wechatPay.jpeg"><b>微信打赏</b>
+            </span>
             
         </div>
-    </article>
+    </div>
+    <p class="reward-tip">
+        卖代码为生
+    </p>
+</div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="/img/wechat.jpeg" target="_blank">llllwgd</a>
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    <a href="/2020/06/25/seata-demo/" class="pre-post btn btn-default" title='seata-demo'>
+        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+        <span class="hidden-xs">
+            seata-demo</span>
+    </a>
+    
+    
+    <a href="/2020/06/23/xa/" class="next-post btn btn-default" title='xa协议'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            xa协议</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
     
 </div>
+
+<div id="comments">
+    
+
+<div id="vcomments" class="valine"></div>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: '2TQvKGRGUu6CQFXTgBOXTbHz-gzGzoHsz',
+    appKey: 'iX0RU69ah1xv5bTQgb6vKxWr',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: true,
+    avatar: 'mm',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'zh-CN'.toLowerCase()
+})
+</script>
+
+
+</div>
+
                 </main>
                 
-                    
-<aside class="col-md-4 sidebar">
-    
-    
-<div class="widget">
-    <h3 class="title">
-        网站公告
-    </h3>
-    <div class="notification">
-        <p>
-  不为无意之事，何以遣有涯之生
-</p>
-    </div>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        社交
-    </h3>
-    <div class="content social">
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
         
-        <a href="https://github.com/llllwgd" rel="external nofollow" title="Github" target="_blank">
-            <i class="git fa fa-git"></i>
-        </a>
-        
-        <a href="img/wechat.jpeg" rel="external nofollow" title="微信" target="_blank">
-            <i class="weixin fa fa-weixin"></i>
-        </a>
-        
-        <a href="/atom.xml" rel="external nofollow" title="RSS" target="_blank">
-            <i class="feed fa fa-feed"></i>
-        </a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#seata-简介"><span class="toc-text">seata 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Seata-是一款开源的分布式事务解决方案，致力于提供高性能和简单易用的分布式事务服务。Seata-将为用户提供了-AT、TCC、SAGA-和-XA-事务模式，为用户打造一站式的分布式解决方案。"><span class="toc-text">Seata 是一款开源的分布式事务解决方案，致力于提供高性能和简单易用的分布式事务服务。Seata 将为用户提供了 AT、TCC、SAGA 和 XA 事务模式，为用户打造一站式的分布式解决方案。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#支持的模式"><span class="toc-text">支持的模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AT模式"><span class="toc-text">AT模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCC模式"><span class="toc-text">TCC模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Saga模式"><span class="toc-text">Saga模式</span></a></li></ol></li></ol>
         
     </div>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        分类
-    </h3>
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/"><i class="fa" aria-hidden="true">docker</i></a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/"><i class="fa" aria-hidden="true">java</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mybatis/"><i class="fa" aria-hidden="true">mybatis</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/"><i class="fa" aria-hidden="true">mysql</i></a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/redis/"><i class="fa" aria-hidden="true">redis</i></a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"><i class="fa" aria-hidden="true">数据库</i></a><span class="category-list-count">2</span></li></ul>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        归档
-    </h3>
-    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/"><i class="fa" aria-hidden="true">2020年07月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/"><i class="fa" aria-hidden="true">2020年06月</i></a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/"><i class="fa" aria-hidden="true">2020年05月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/"><i class="fa" aria-hidden="true">2020年04月</i></a><span class="archive-list-count">1</span></li></ul>
-</div>
-
-    
-    
-<div class="widget">
-    <h3 class="title">
-        标签云
-    </h3>
-    <div class="content tag-cloud">
-        
-        <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/mybaits/" style="font-size: 10px;">mybaits</a> <a href="/tags/mybatis/" style="font-size: 10px;">mybatis</a> <a href="/tags/mysql/" style="font-size: 16.67px;">mysql</a> <a href="/tags/redis/" style="font-size: 20px;">redis</a> <a href="/tags/seata/" style="font-size: 13.33px;">seata</a> <a href="/tags/spring/" style="font-size: 10px;">spring</a> <a href="/tags/sprngboot/" style="font-size: 10px;">sprngboot</a> <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/" style="font-size: 13.33px;">分布式事务</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a> <a href="/tags/%E7%BC%96%E8%AF%91/" style="font-size: 10px;">编译</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">设计模式</a>
-        
-    </div>
-</div>
-
-    
-    
-    
 </aside>
-
                 
             </div>
         </div>
@@ -311,10 +338,6 @@
         </div>
     </div>
 </div>
-
-
-<script src="/js/search.js?rev=@@hash.js"></script>
-
 
 
 

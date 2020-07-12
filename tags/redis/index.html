@@ -33,7 +33,7 @@
 
 <title>
     
-    categories |
+    标签: redis |
     
     llllwgd
 </title>
@@ -142,53 +142,115 @@
         <div class="container">
             <div class="row">
                 <main class="col-md-8 main-content ">
-                    <div>
+                    <ol class="breadcrumb">
     
-    <article class="post">
-        <h1 class="post-head">共计
-            6个分类</h1>
-        <div class="post-body">
-            
-            <li class="post-items">
-                <a href="/categories/java/" title="java" target="_blank">
-                    java
-                </a>
-            </li>
-            
-            <li class="post-items">
-                <a href="/categories/数据库/" title="数据库" target="_blank">
-                    数据库
-                </a>
-            </li>
-            
-            <li class="post-items">
-                <a href="/categories/mybatis/" title="mybatis" target="_blank">
-                    mybatis
-                </a>
-            </li>
-            
-            <li class="post-items">
-                <a href="/categories/redis/" title="redis" target="_blank">
-                    redis
-                </a>
-            </li>
-            
-            <li class="post-items">
-                <a href="/categories/docker/" title="docker" target="_blank">
-                    docker
-                </a>
-            </li>
-            
-            <li class="post-items">
-                <a href="/categories/mysql/" title="mysql" target="_blank">
-                    mysql
-                </a>
-            </li>
-            
+    <li>
+        redis
+    </li>
+    
+    
+</ol>
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/06/06/redis%E6%8C%81%E4%B9%85%E5%8C%96/">
+                    redsi持久化</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年06月06日
+                </time>
+            </div>
         </div>
-    </article>
+        <p class="brief">
+            
+            redis持久化持久化的方式
+rdb
+aofrdm工作方式Redis 调用forks. 同时拥有父进程和子进程。子进程将数据集写入到一个临时 RDB 文件中。当子进程完成对新 RDB 文件的写入时，Redis 用新 RDB 文件替换原...
+            
+        </p>
+    </div>
+</article>
+
+<article class="post">
     
-</div>
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/06/06/redis%E5%91%BD%E4%BB%A4/">
+                    redis命令</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年06月06日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            redis命令append存在key的话，向字符串追加，不存在则创建应用：通过每次追加一定长度的字符串，需要的时候通过getrange命令获取
+bitcount统计字符串被设置为1的bit数.应用：用户登陆统计
+eval执行lua脚本...
+            
+        </p>
+    </div>
+</article>
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/06/06/redis%E7%9A%84%E7%BC%BA%E7%82%B9/">
+                    redis的缺点</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年06月06日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            redis的缺点
+持久化影响性能 
+占用较多内存资源 
+
+
+            
+        </p>
+    </div>
+</article>
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/06/06/redis%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/">
+                    redis的使用场景</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年06月06日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            redis的使用场景
+高性能适合做缓存 
+对字典表进行缓存（对字典表的操作同步到redis）
+缓存数据，访问数据时先读取redis中的数据，没有的话再去读取mysql（避免缓存击穿，而且数据实时性不高， 因为要先存入mysql，再同步...
+            
+        </p>
+    </div>
+</article>
+
+
                 </main>
                 
                     
