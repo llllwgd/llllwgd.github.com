@@ -24,7 +24,9 @@
 
 <meta name="description" content="redis持久化持久化的方式
 rdb
-aofrdm工作方式Redis 调用forks. 同时拥有父进程和子进程。子进程将数据集写入到一个临时 RDB 文件中。当子进程完成对新 RDB 文件的写入..." />
+
+aof
+rdm工作方式Redis 调用forks. 同时拥有父进程和子进程。子进程将数据集写入到一个临时 RDB 文件中。当子进程完成对新 RDB 文件的..." />
 
 
 <meta name="robots" content="all" />
@@ -190,17 +192,30 @@ aofrdm工作方式Redis 调用forks. 同时拥有父进程和子进程。子进�
     
     <div class="post-body post-content">
         <h1 id="redis持久化"><a href="#redis持久化" class="headerlink" title="redis持久化"></a>redis持久化</h1><h2 id="持久化的方式"><a href="#持久化的方式" class="headerlink" title="持久化的方式"></a>持久化的方式</h2><ul>
-<li>rdb</li>
-<li>aof<h2 id="rdm"><a href="#rdm" class="headerlink" title="rdm"></a>rdm</h2><h3 id="工作方式"><a href="#工作方式" class="headerlink" title="工作方式"></a>工作方式</h3>Redis 调用forks. 同时拥有父进程和子进程。<br>子进程将数据集写入到一个临时 RDB 文件中。<br>当子进程完成对新 RDB 文件的写入时，Redis 用新 RDB 文件替换原来的 RDB 文件，并删除旧的 RDB 文件。<h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3></li>
-<li>备份文件比较小</li>
-<li>支持多种备份模式同时存在， 比如每5分钟备份前30分钟，每1一天备份一个月的</li>
-<li>恢复速度比aof快<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3></li>
-<li>丢失最后一次备份之后的数据</li>
-<li>数据量大的时候备份影响系统性能<h2 id="aof"><a href="#aof" class="headerlink" title="aof"></a>aof</h2>Redis 调用forks. 同时拥有父进程和子进程。<br>子进程将数据集写入到一个临时 RDB 文件中。<br>当子进程完成对新 RDB 文件的写入时，Redis 用新 RDB 文件替换原来的 RDB 文件，并删除旧的 RDB 文件。<h3 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h3></li>
-<li>故障时丢失的数据较少</li>
-<li>对文件进行重写<h3 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h3></li>
-<li>备份文件大</li>
-<li>恢复速度慢</li>
+<li><p>rdb</p>
+</li>
+<li><p>aof</p>
+<h2 id="rdm"><a href="#rdm" class="headerlink" title="rdm"></a>rdm</h2><h3 id="工作方式"><a href="#工作方式" class="headerlink" title="工作方式"></a>工作方式</h3><p>Redis 调用forks. 同时拥有父进程和子进程。<br>子进程将数据集写入到一个临时 RDB 文件中。<br>当子进程完成对新 RDB 文件的写入时，Redis 用新 RDB 文件替换原来的 RDB 文件，并删除旧的 RDB 文件。</p>
+<h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3></li>
+<li><p>备份文件比较小</p>
+</li>
+<li><p>支持多种备份模式同时存在， 比如每5分钟备份前30分钟，每1一天备份一个月的</p>
+</li>
+<li><p>恢复速度比aof快</p>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3></li>
+<li><p>丢失最后一次备份之后的数据</p>
+</li>
+<li><p>数据量大的时候备份影响系统性能</p>
+<h2 id="aof"><a href="#aof" class="headerlink" title="aof"></a>aof</h2><p>Redis 调用forks. 同时拥有父进程和子进程。<br>子进程将数据集写入到一个临时 RDB 文件中。<br>当子进程完成对新 RDB 文件的写入时，Redis 用新 RDB 文件替换原来的 RDB 文件，并删除旧的 RDB 文件。</p>
+<h3 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h3></li>
+<li><p>故障时丢失的数据较少</p>
+</li>
+<li><p>对文件进行重写</p>
+<h3 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h3></li>
+<li><p>备份文件大</p>
+</li>
+<li><p>恢复速度慢</p>
+</li>
 </ul>
 
     </div>
